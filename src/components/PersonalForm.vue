@@ -63,6 +63,6 @@ function savePersonalInformation() {
   store.commit("saveName", { value: name });
   store.commit("saveLastname", { value: lastname });
   store.commit("saveEmail", { value: email });
-  router.push({ path: "/" });
+  router.push({ path: "/covid-condition" });
 }
 </script>
