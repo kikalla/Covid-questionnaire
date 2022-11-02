@@ -1,14 +1,14 @@
 <template>
   <section class="px-[200px] pt-[100px]">
-    <page-header image="2-4.png"></page-header>
+    <page-header image="3-4.png"></page-header>
     <div class="flex justify-between">
       <div>
-        <condition-form></condition-form>
+        <vaccinate-form></vaccinate-form>
       </div>
       <img
-        src="../assets/feever.png"
+        src="../assets/vaccinate.png"
         alt="photo"
-        class="relative bottom-[50px] left-[50px] z-0"
+        class="relative bottom-[30px] left-[50px] z-0"
       />
     </div>
   </section>
@@ -16,5 +16,5 @@
 
 <script setup>
 import pageHeader from "../components/PageHeader.vue";
-import ConditionForm from "../components/ConditionForm.vue";
+import VaccinateForm from "../components/VaccinateForm.vue";
 </script>

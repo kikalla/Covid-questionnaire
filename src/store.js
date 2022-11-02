@@ -13,6 +13,8 @@ const store = createStore({
         number: "",
       },
       covid_date: "",
+      had_vaccine: "",
+      vaccination_stage: "",
     };
   },
   mutations: {
@@ -37,6 +39,12 @@ const store = createStore({
     },
     saveCovidDate(state, payload) {
       state.covid_date = payload.value;
+    },
+    saveVaccine(state, payload) {
+      state.had_vaccine = payload.value;
+    },
+    saveVaccinationStage(state, payload) {
+      state.vaccination_stage = payload.value;
     },
   },
 });
