@@ -78,6 +78,6 @@ function saveCovidCondition() {
     number: antibodyTestNumber,
   });
   store.commit("saveCovidDate", { value: covidDate });
-  router.push({ path: "/" });
+  router.push({ path: "/vaccinate" });
 }
 </script>

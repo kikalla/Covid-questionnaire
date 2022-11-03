@@ -17,4 +17,7 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import pageHeader from "../components/PageHeader.vue";
+import PersonalForm from "../components/PersonalForm.vue";
+</script>
