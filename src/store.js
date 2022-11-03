@@ -15,6 +15,10 @@ const store = createStore({
       covid_date: "",
       had_vaccine: "",
       vaccination_stage: "",
+      non_formal_meetings: "",
+      number_of_days_from_office: null,
+      what_about_meetings_in_live: "",
+      tell_us_your_opinion_about_us: "",
     };
   },
   mutations: {
@@ -45,6 +49,18 @@ const store = createStore({
     },
     saveVaccinationStage(state, payload) {
       state.vaccination_stage = payload.value;
+    },
+    saveMeeting(state, payload) {
+      state.non_formal_meetings = payload.value;
+    },
+    saveDays(state, payload) {
+      state.number_of_days_from_office = payload.value;
+    },
+    saveLiveMeeting(state, payload) {
+      state.what_about_meetings_in_live = payload.value;
+    },
+    saveOpinion(state, payload) {
+      state.tell_us_your_opinion_about_us = payload.value;
     },
   },
 });
