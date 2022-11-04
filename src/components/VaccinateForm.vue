@@ -72,7 +72,6 @@ function goBack() {
 function saveVaccineValues() {
   store.commit("saveVaccine", { value: vaccinate });
   store.commit("saveVaccinationStage", { value: vaccinateStage });
-  console.log(store.state.had_vaccine, store.state.vaccination_stage);
-  router.push({ path: "/" });
+  router.push({ path: "/covid-policy" });
 }
 </script>
