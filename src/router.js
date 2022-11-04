@@ -5,6 +5,7 @@ import Personal from "./pages/personalInformationPage.vue";
 import Condition from "./pages/covidCondition.vue";
 import Vaccinate from "./pages/vaccinatePage.vue";
 import Policy from "./pages/covidPolicy.vue";
+import Thanks from "./pages/thanksPage.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -14,6 +15,7 @@ const router = createRouter({
     { path: "/covid-condition", component: Condition },
     { path: "/vaccinate", component: Vaccinate },
     { path: "/covid-policy", component: Policy },
+    { path: "/thanks", component: Thanks },
   ],
 });
 
