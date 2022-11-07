@@ -196,12 +196,38 @@ const days = ref(null);
 const physicalMeeting = ref("");
 const change = ref("");
 
+function sendApi() {
+  fetch("https://covid19.devtest.ge/api/create", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      first_name: store.state.first_name,
+      last_name: store.state.last_name,
+      email: store.state.email,
+      had_covid: store.state.had_covid,
+      had_antibody_test: store.state.had_antibody_test,
+      test_date: store.state.antibodies.test_date,
+      number: store.state.antibodies.number,
+      covid_date: store.state.covid_date,
+      had_vaccine: store.state.had_vaccine,
+      vaccination_stage: store.state.vaccination_stage,
+      non_formal_meetings: store.state.non_formal_meetings,
+      number_of_days_from_office: store.state.number_of_days_from_office,
+      what_about_meetings_in_live: store.state.what_about_meetings_in_live,
+      tell_us_your_opinion_about_us: store.state.tell_us_your_opinion_about_us,
+    }),
+  });
+}
+
 function saveCovidPolicy() {
   store.commit("saveMeeting", { value: meeting });
   store.commit("saveDays", { value: days });
   store.commit("saveLiveMeeting", { value: physicalMeeting });
   store.commit("saveOpinion", { value: change });
-  router.push({ path: "/" });
+  sendApi();
+  router.push({ path: "/thanks" });
 }
 
 function goBack() {
