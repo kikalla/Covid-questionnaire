@@ -12,7 +12,7 @@ const store = createStore({
         test_date: "",
         number: "",
       },
-      covid_date: "",
+      covid_sickness_date: "",
       had_vaccine: "",
       vaccination_stage: "",
       non_formal_meetings: "",
@@ -42,7 +42,7 @@ const store = createStore({
       state.antibodies.number = payload.number;
     },
     saveCovidDate(state, payload) {
-      state.covid_date = payload.value;
+      state.covid_sickness_date = payload.value;
     },
     saveVaccine(state, payload) {
       state.had_vaccine = payload.value;

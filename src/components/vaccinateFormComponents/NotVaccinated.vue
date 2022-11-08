@@ -35,7 +35,7 @@
         v-model="vaccinateStage"
         type="radio"
         name="vaccinationStage"
-        value="planning_vaccination"
+        value="had_covid_and_planning_to_be_vaccinated"
         id="planning"
         class="w-[25px] h-[25px] align-middle"
       />
