@@ -40,7 +40,7 @@ const covidDate = ref("");
 
 function saveCovidValue(recivedCovid) {
   covid.value = recivedCovid.value;
-  if (covid.value === "no" && "now") {
+  if (covid.value === "no" && "have_right_now") {
     antibodyTestValue.value = null;
     antibodyTestDate.value = "";
     antibodyTestNumber.value = "";

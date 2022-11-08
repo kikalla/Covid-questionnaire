@@ -53,7 +53,7 @@
         <input
           required
           v-model="meeting"
-          value="once_in_two_weeks"
+          value="once_in_a_two_weeks"
           type="radio"
           name="meeting"
           id="threeTimes"
@@ -67,7 +67,7 @@
         <input
           required
           v-model="meeting"
-          value="once_in_month"
+          value="once_in_a_month"
           type="radio"
           name="meeting"
           id="month"
@@ -84,6 +84,18 @@
     </p>
 
     <div class="flex flex-col ml-[30px]">
+      <div class="my-[20px]">
+        <input
+          required
+          v-model="days"
+          :value="0"
+          type="radio"
+          name="work"
+          id="one"
+          class="w-[25px] h-[25px] align-middle border"
+        />
+        <label for="one" class="font-normal text-xl ml-[20px]">0</label>
+      </div>
       <div>
         <input
           required
@@ -210,7 +222,7 @@ function sendApi() {
       had_antibody_test: store.state.had_antibody_test,
       test_date: store.state.antibodies.test_date,
       number: store.state.antibodies.number,
-      covid_date: store.state.covid_date,
+      covid_sickness_date: store.state.covid_sickness_date,
       had_vaccine: store.state.had_vaccine,
       vaccination_stage: store.state.vaccination_stage,
       non_formal_meetings: store.state.non_formal_meetings,

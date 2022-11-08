@@ -31,7 +31,7 @@
         v-model="covid"
         type="radio"
         name="covid"
-        value="now"
+        value="have_right_now"
         id="now"
         class="w-[25px] h-[25px] align-middle"
       />

@@ -35,7 +35,7 @@
         v-model="vaccinateStage"
         type="radio"
         name="vaccinationStage"
-        value="first_dosage_and_not_registered_on_the_second"
+        value="first_dosage_and_not_registered_yet"
         id="firstNotRegistered"
         class="w-[25px] h-[25px] align-middle"
       />
