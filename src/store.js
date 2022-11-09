@@ -13,7 +13,7 @@ const store = createStore({
         number: "",
       },
       covid_sickness_date: "",
-      had_vaccine: "",
+      had_vaccine: null,
       vaccination_stage: "",
       non_formal_meetings: "",
       number_of_days_from_office: null,
