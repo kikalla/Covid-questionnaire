@@ -209,28 +209,65 @@ const physicalMeeting = ref("");
 const change = ref("");
 
 function sendApi() {
+  const data = {
+    first_name: store.state.first_name,
+    last_name: store.state.last_name,
+    email: store.state.email,
+    had_covid: store.state.had_covid,
+  };
+  if (store.state.had_antibody_test !== null) {
+    data["had_antibody_test"] = store.state.had_antibody_test;
+  }
+  if (store.state.tell_us_your_opinion_about_us !== "") {
+    data["tell_us_your_opinion_about_us"] =
+      store.state.tell_us_your_opinion_about_us;
+  }
+
+  if (store.state.antibodies.test_date !== "") {
+    data["antibodies.test_date"] = store.state.antibodies.test_date;
+  }
+  if (store.state.antibodies.number !== "") {
+    data["antibodies.number"] = store.state.antibodies.number;
+  }
+
+  if (store.state.covid_sickness_date !== "") {
+    data["covid_sickness_date"] = store.state.covid_sickness_date;
+  }
+  if (store.state.had_vaccine !== null) {
+    data["had_vaccine"] = store.state.had_vaccine;
+  }
+  if (store.state.vaccination_stage !== "") {
+    data["vaccination_stage"] = store.state.vaccination_stage;
+  }
+  if (store.state.non_formal_meetings !== "") {
+    data["non_formal_meetings"] = store.state.non_formal_meetings;
+  }
+
+  if (store.state.number_of_days_from_office !== null) {
+    data["number_of_days_from_office"] = store.state.number_of_days_from_office;
+  }
+  if (store.state.what_about_meetings_in_live !== "") {
+    data["what_about_meetings_in_live"] =
+      store.state.what_about_meetings_in_live;
+  }
+  if (store.state.tell_us_your_opinion_about_us !== "") {
+    data["tell_us_your_opinion_about_us"] =
+      store.state.tell_us_your_opinion_about_us;
+  }
+
   fetch("https://covid19.devtest.ge/api/create", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      first_name: store.state.first_name,
-      last_name: store.state.last_name,
-      email: store.state.email,
-      had_covid: store.state.had_covid,
-      had_antibody_test: store.state.had_antibody_test,
-      test_date: store.state.antibodies.test_date,
-      number: store.state.antibodies.number,
-      covid_sickness_date: store.state.covid_sickness_date,
-      had_vaccine: store.state.had_vaccine,
-      vaccination_stage: store.state.vaccination_stage,
-      non_formal_meetings: store.state.non_formal_meetings,
-      number_of_days_from_office: store.state.number_of_days_from_office,
-      what_about_meetings_in_live: store.state.what_about_meetings_in_live,
-      tell_us_your_opinion_about_us: store.state.tell_us_your_opinion_about_us,
-    }),
-  });
+    body: JSON.stringify(data),
+  })
+    .then(function () {
+      router.push({ path: "/thanks" });
+    })
+    .catch(function () {
+      console.log("error", data);
+    });
 }
 
 function saveCovidPolicy() {
@@ -239,7 +276,6 @@ function saveCovidPolicy() {
   store.commit("saveLiveMeeting", { value: physicalMeeting });
   store.commit("saveOpinion", { value: change });
   sendApi();
-  router.push({ path: "/thanks" });
 }
 
 function goBack() {
