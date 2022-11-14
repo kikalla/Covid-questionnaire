@@ -1,13 +1,18 @@
 <template>
   <div class="flex justify-between">
-    <img src="/src/assets/redberryText.svg" alt="redberry" />
-    <img :src="'/src/assets/' + image" alt="1/4" />
+    <img src="@/assets/redberryText.svg" alt="redberry" />
+    <div class="font-bold text-3xl">{{ pageNumber }}</div>
   </div>
-  <div class="w-[100%] border-2 border-black mt-[20px] mb-[40px]"></div>
+  <div class="w-[100%] border-2 border-black mt-5 mb-10"></div>
 </template>
 
 <script>
 export default {
-  props: ["image"],
+  props: {
+    pageNumber: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>

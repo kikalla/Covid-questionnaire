@@ -1,11 +1,11 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
-import HomePage from "./pages/homePage.vue";
-import Personal from "./pages/personalInformationPage.vue";
-import Condition from "./pages/covidCondition.vue";
-import Vaccinate from "./pages/vaccinatePage.vue";
-import Policy from "./pages/covidPolicy.vue";
-import Thanks from "./pages/thanksPage.vue";
+import HomePage from "@/pages/HomePage.vue";
+import Personal from "@/pages/PersonalInformationPage.vue";
+import Condition from "@/pages/CovidCondition.vue";
+import Vaccinate from "@/pages/VaccinatePage.vue";
+import Policy from "@/pages/CovidPolicy.vue";
+import Thanks from "@/pages/ThanksPage.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),

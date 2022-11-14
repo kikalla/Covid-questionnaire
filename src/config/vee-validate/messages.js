@@ -9,6 +9,7 @@ defineRule("alpha", alpha);
 
 configure({
   // Generates an English message locale generator
+  // TODO: en -ის ნაცვლად ka ჩავწეროთ აქ
   generateMessage: localize("en", {
     messages: {
       required: "გთხოვთ შეავსოთ მოცემული ველი",

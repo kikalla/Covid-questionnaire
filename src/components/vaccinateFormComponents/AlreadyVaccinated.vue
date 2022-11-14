@@ -1,6 +1,6 @@
 <template>
-  <p class="font-bold text-[22px] mb-[20px] mt-[50px]">აირჩიე რა ეტაპზე ხარ*</p>
-  <div class="flex flex-col ml-[30px]">
+  <p class="font-bold text-2xl mb-5 mt-12">აირჩიე რა ეტაპზე ხარ*</p>
+  <div class="flex flex-col ml-8">
     <div>
       <input
         required
@@ -9,13 +9,13 @@
         name="vaccinationStage"
         value="first_dosage_and_registered_on_the_second"
         id="firstRegistered"
-        class="w-[25px] h-[25px] align-middle border"
+        class="w-6 h-6 align-middle border"
       />
-      <label for="firstRegistered" class="font-normal text-xl ml-[20px]"
+      <label for="firstRegistered" class="font-normal text-xl ml-5"
         >პირველი დოზა და დარეგისტრირებული ვარ მეორეზე</label
       >
     </div>
-    <div class="my-[20px]">
+    <div class="my-5">
       <input
         required
         v-model="vaccinateStage"
@@ -23,9 +23,9 @@
         name="vaccinationStage"
         value="fully_vaccinated"
         id="fullyVaccinated"
-        class="w-[25px] h-[25px] align-middle"
+        class="w-6 h-6 align-middle"
       />
-      <label for="fullyVaccinated" class="font-normal text-xl ml-[20px]"
+      <label for="fullyVaccinated" class="font-normal text-xl ml-5"
         >სრულად აცრილი ვარ</label
       >
     </div>
@@ -37,15 +37,15 @@
         name="vaccinationStage"
         value="first_dosage_and_not_registered_yet"
         id="firstNotRegistered"
-        class="w-[25px] h-[25px] align-middle"
+        class="w-6 h-6 align-middle"
       />
-      <label for="firstNotRegistered" class="font-normal text-xl ml-[20px]"
+      <label for="firstNotRegistered" class="font-normal text-xl ml-5"
         >პირველი დოზა და არ დავრეგისტრირებულვარ მეორეზე</label
       >
     </div>
     <div
       v-if="vaccinateStage === 'first_dosage_and_not_registered_on_the_second'"
-      class="w-[330px] mt-[50px] ml-[25px] font-normal text-xl"
+      class="w-[8 mt-12 ml-6 font-normal text-xl"
     >
       <p>რომ არ გადადო, ბარემ ახლავე დარეგისტრირდი</p>
       <a class="text-[#1289AE]" href="https://booking.moh.gov.ge/"
