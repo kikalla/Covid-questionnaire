@@ -22,23 +22,9 @@ This website is for registration in Redberry, you must fill inputs about your co
 
 #
 
-## Resources
-
-- <img src="readme/assets/figma.png" width="30" style="position: relative; top: 10px" /> Figma
-
-- <img src="readme/assets/prittier.png" width="30" style="position: relative; top: 10px" /> Prittier
-
-- <img src="readme/assets/eslint.png" width="30" style="position: relative; top: 10px" /> ESlint
-
-- <img src="readme/assets/tailwind.png" width="30" style="position: relative; top: 10px" /> Tailwind
-
-- <img src="readme/assets/vite.png" width="30" style="position: relative; top: 10px" /> Vite
-
-#
-
 ## Web Link
 
-<a href="covid-questionnaire.giorgi-kikadze.redberryinternship.ge_">covid-questionnaire.giorgi-kikadze.redberryinternship.ge</a>
+<a href="https://covid-questionnaire.giorgi-kikadze.redberryinternship.ge/#/">covid-questionnaire.giorgi-kikadze.redberryinternship.ge</a>
 
 #
 
@@ -65,3 +51,18 @@ npm run build
 ```sh
 npm run lint
 ```
+
+#
+
+## Resources
+
+- <img src="readme/assets/figma.png" width="30" style="position: relative; top: 10px" /> <a href="https://www.figma.com/file/56t2BI25FcD0LAIjR4GVkQ/%E1%83%99%E1%83%98%E1%83%97%E1%83%AE%E1%83%95%E1%83%90%E1%83%A0%E1%83%98?node-id=37%3A3">Figma</a>
+
+- <img src="readme/assets/prittier.png" width="30" style="position: relative; top: 10px" /> <a href="https://prettier.io/">Prittier</a>
+
+- <img src="readme/assets/eslint.png" width="30" style="position: relative; top: 10px" /> 
+  <a href="https://eslint.org/">ESlint</a>
+
+- <img src="readme/assets/tailwind.png" width="30" style="position: relative; top: 10px" /> <a href="https://tailwindcss.com/">Tailwind</a>
+
+- <img src="readme/assets/vite.png" width="30" style="position: relative; top: 10px" /><a href="https://vitejs.dev/">Vite</a>
