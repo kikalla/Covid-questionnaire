@@ -8,7 +8,7 @@
       <img
         src="@/assets/covidPolicy.png"
         alt="photo"
-        class="absolute top-52 left-[950px] z-0"
+        class="absolute top-52 left-[59.375rem] z-0"
       />
     </div>
   </section>

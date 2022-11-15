@@ -6,7 +6,7 @@
         v-model="name"
         name="name"
         type="text"
-        class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[500px]"
+        class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[31.25rem]"
         placeholder="სახელი"
         rules="required|min:3|alpha"
       />
@@ -18,7 +18,7 @@
         v-model="lastname"
         name="lastname"
         type="text"
-        class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[500px]"
+        class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[31.25rem]"
         placeholder="გვარი"
         rules="required|min:3|alpha"
       />
@@ -30,13 +30,13 @@
         v-model="email"
         name="email"
         type="text"
-        class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[500px]"
+        class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[31.25rem]"
         placeholder="მეილი"
         rules="required|redberry|email"
       />
       <ErrorMessage name="email" class="text-red-600 mt-3 ml-3" />
     </div>
-    <button type="submit" class="absolute top-[955px] left-[1018px]">
+    <button type="submit" class="absolute top-[59.75rem] left-[63.6rem]">
       <img src="@/assets/arrow.svg" alt="" />
     </button>
   </Form>

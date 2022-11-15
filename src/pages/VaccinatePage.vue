@@ -1,5 +1,5 @@
 <template>
-  <section class="px-[200px] pt-[100px]">
+  <section class="px-48 pt-24">
     <page-header pageNumber="3/4"></page-header>
     <div class="flex justify-between">
       <div>
@@ -8,7 +8,7 @@
       <img
         src="@/assets/vaccinate.png"
         alt="photo"
-        class="relative bottom-[30px] left-12 z-0"
+        class="relative bottom-7 left-12 z-0"
       />
     </div>
   </section>

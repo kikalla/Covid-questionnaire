@@ -43,7 +43,7 @@
           id="test-data"
           type="text"
           placeholder="რიცხვი"
-          class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[500px]"
+          class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[31.25rem]"
         />
       </div>
       <div class="my-5">
@@ -53,7 +53,7 @@
           id="number"
           type="text"
           placeholder="ანტისხეულების რაოდენობა"
-          class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[500px]"
+          class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[31.25rem]"
         />
       </div>
     </div>
@@ -71,7 +71,7 @@
           id="number"
           type="date"
           placeholder="დდ/თთ/წწ"
-          class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[500px]"
+          class="bg-[#EAEAEA] border border-black h-12 p-3 outline-none w-[31.25rem]"
         />
       </div>
     </div>

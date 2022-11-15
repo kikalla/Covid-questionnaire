@@ -1,21 +1,21 @@
 <template>
   <form
     @submit.prevent="saveCovidPolicy"
-    class="h-[850px] overflow-auto relative bottom-10 scrollbar-hide w-[600px]"
+    class="h-[53.125rem] overflow-auto relative bottom-10 scrollbar-hide w-[37.5rem]"
   >
-    <div class="w-[600px] font-normal text-2xl mt-10">
+    <div class="w-[37.5rem] font-normal text-2xl mt-10">
       <p>
         რედბერის მთავარი ღირებულება ჩვენი გუნდის თითოეული წევრია. გარემო,
         რომელსაც ჩვენი თანამშრომლები ქმნით, ბევრისთვის არის და ყოფილა წლების
         განმავლობაში მიზნებისთვის ერთად ბრძოლის მიზეზი, ბევრისთვის კი — ჩვენთან
         გადმოსვლის.
       </p>
-      <p class="mt-8 w-[600px]">
+      <p class="mt-8 w-[37.5rem]">
         პანდემიის პერიოდში ერთმანეთსაც იშვიათად ვნახულობთ პირისპირ და
         ყოველდღიური კომუნიკაციაც გაიშვიათდა.
       </p>
     </div>
-    <p class="font-bold text-2xl mb-5 mt-11 w-[600px]">
+    <p class="font-bold text-2xl mb-5 mt-11 w-[37.5rem]">
       რა სიხშირით შეიძლება გვქონდეს საერთო არაფორმალური ონლაინ შეხვედრები, სადაც
       ყველა სურვილისამებრ ჩაერთვება
     </p>
@@ -159,7 +159,7 @@
     <p class="font-bold text-2xl mb-5 mt-11">რას ფიქრობ ფიზიკურ შეკრებებზე?</p>
     <textarea
       v-model="physicalMeeting"
-      class="w-[600px] h-[180px] bg-[#EAEAEA] border border-black p-3 outline-none"
+      class="w-[37.5rem] h-[11.25rem] bg-[#EAEAEA] border border-black p-3 outline-none"
       cols="30"
       rows="10"
     ></textarea>
@@ -172,21 +172,21 @@
     </p>
     <textarea
       v-model="change"
-      class="w-[600px] h-[180px] bg-[#EAEAEA] border border-black p-3 outline-none"
+      class="w-[37.5rem] h-[11.25rem] bg-[#EAEAEA] border border-black p-3 outline-none"
       cols="30"
       rows="10"
     ></textarea>
 
     <button
       type="submit"
-      class="p-4 bg-[#208298] text-white rounded-3xl mt-5 font-bold text-lg ml-[460px] hover:scale-[96%]"
+      class="p-4 bg-[#208298] text-white rounded-3xl mt-5 font-bold text-lg ml-[28.75rem] hover:scale-[96%]"
     >
       დასრულება
     </button>
   </form>
   <div
     @click="goBack"
-    class="absolute top-[955px] left-[890px] z-10 cursor-pointer"
+    class="absolute top-[59.68rem] left-[55.625rem] z-10 cursor-pointer"
   >
     <img src="@/assets/backArrow.svg" alt="" />
   </div>

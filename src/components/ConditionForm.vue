@@ -10,13 +10,13 @@
     ></antibody-test>
     <div
       @click="goBack"
-      class="absolute top-[955px] left-[890px] z-10 cursor-pointer"
+      class="absolute top-[60rem] left-[55.5rem] z-10 cursor-pointer"
     >
       <img src="@/assets/backArrow.svg" alt="" />
     </div>
     <button
       type="submit"
-      class="absolute top-[955px] left-[1018px] z-10 cursor-pointer"
+      class="absolute top-[60rem] left-[63.6rem] z-10 cursor-pointer"
     >
       <img src="@/assets/arrow.svg" alt="" />
     </button>

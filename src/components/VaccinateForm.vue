@@ -35,13 +35,13 @@
     ></not-vaccinated>
     <div
       @click="goBack"
-      class="absolute top-[955px] left-[890px] z-10 cursor-pointer"
+      class="absolute top-[59.75rem] left-[55.625rem] z-10 cursor-pointer"
     >
       <img src="@/assets/backArrow.svg" alt="" />
     </div>
     <button
       type="submit"
-      class="absolute top-[955px] left-[1018px] z-10 cursor-pointer"
+      class="absolute top-[59.75rem] left-[63.75rem] z-10 cursor-pointer"
     >
       <img src="@/assets/arrow.svg" alt="" />
     </button>

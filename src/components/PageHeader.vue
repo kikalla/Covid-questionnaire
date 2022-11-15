@@ -3,7 +3,7 @@
     <img src="@/assets/redberryText.svg" alt="redberry" />
     <div class="font-bold text-3xl">{{ pageNumber }}</div>
   </div>
-  <div class="w-[100%] border-2 border-black mt-5 mb-10"></div>
+  <div class="w-full border-2 border-black mt-5 mb-10"></div>
 </template>
 
 <script>

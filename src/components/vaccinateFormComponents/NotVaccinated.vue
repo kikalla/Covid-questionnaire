@@ -43,7 +43,7 @@
         >გადატანილი მაქვს და ვგეგმავ აცრას</label
       >
     </div>
-    <div class="w-[500px] mt-12 ml-6 font-normal text-xl">
+    <div class="w-[31.25rem] mt-12 ml-6 font-normal text-xl">
       <p v-if="vaccinateStage === 'planning_vaccination'">
         ახალი პროტოკოლით კოვიდის გადატანიდან 1 თვის შემდეგ შეგიძლიათ ვაქცინის
         გაკეთება.

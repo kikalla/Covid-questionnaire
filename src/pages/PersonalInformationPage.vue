@@ -1,5 +1,5 @@
 <template>
-  <section class="px-[200px] pt-[100px]">
+  <section class="px-48 pt-24">
     <page-header pageNumber="1/4"></page-header>
     <div class="flex justify-between">
       <div>
@@ -11,7 +11,7 @@
       <img
         src="@/assets/personalInformation.png"
         alt="photo"
-        class="relative bottom-[110px]"
+        class="relative bottom-28"
       />
     </div>
   </section>
