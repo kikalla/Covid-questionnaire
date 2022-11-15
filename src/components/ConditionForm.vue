@@ -10,24 +10,24 @@
     ></antibody-test>
     <div
       @click="goBack"
-      class="absolute top-[955px] left-[890px] z-10 cursor-pointer"
+      class="absolute top-[60rem] left-[55.5rem] z-10 cursor-pointer"
     >
-      <img src="/src/assets/backArrow.svg" alt="" />
+      <img src="@/assets/backArrow.svg" alt="" />
     </div>
     <button
       type="submit"
-      class="absolute top-[955px] left-[1018px] z-10 cursor-pointer"
+      class="absolute top-[60rem] left-[63.6rem] z-10 cursor-pointer"
     >
-      <img src="/src/assets/arrow.svg" alt="" />
+      <img src="@/assets/arrow.svg" alt="" />
     </button>
   </form>
 </template>
 
 <script setup>
-import HadCovid from "./conditionFormComponents/HadCovid.vue";
-import AntibodyTest from "./conditionFormComponents/AntibodyTest.vue";
+import HadCovid from "@/components/conditionFormComponents/HadCovid.vue";
+import AntibodyTest from "@/components/conditionFormComponents/AntibodyTest.vue";
 import { ref } from "vue";
-import router from "../router";
+import router from "@/router";
 import { useStore } from "vuex";
 
 const store = useStore();

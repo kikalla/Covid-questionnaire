@@ -8,8 +8,7 @@ defineRule("required", required);
 defineRule("alpha", alpha);
 
 configure({
-  // Generates an English message locale generator
-  generateMessage: localize("en", {
+  generateMessage: localize("ka", {
     messages: {
       required: "გთხოვთ შეავსოთ მოცემული ველი",
       email: "თქვენს მიერ შეყვანილი ტექსტი არ აკმაყოფილებს მეილის ფორმატს",

@@ -1,6 +1,6 @@
 <template>
-  <p class="font-bold text-[22px] mb-[20px]">გაქვს გადატანილი Covid-19?</p>
-  <div class="flex flex-col ml-[30px]">
+  <p class="font-bold text-2xl mb-5">გაქვს გადატანილი Covid-19?</p>
+  <div class="flex flex-col ml-8">
     <div>
       <input
         required
@@ -9,11 +9,11 @@
         name="covid"
         value="yes"
         id="yes"
-        class="w-[25px] h-[25px] align-middle border"
+        class="w-6 h-6 align-middle border"
       />
-      <label for="yes" class="font-normal text-xl ml-[20px]">კი</label>
+      <label for="yes" class="font-normal text-xl ml-5">კი</label>
     </div>
-    <div class="my-[20px]">
+    <div class="my-5">
       <input
         required
         v-model="covid"
@@ -21,9 +21,9 @@
         name="covid"
         value="no"
         id="no"
-        class="w-[25px] h-[25px] align-middle"
+        class="w-6 h-6 align-middle"
       />
-      <label for="no" class="font-normal text-xl ml-[20px]">არა</label>
+      <label for="no" class="font-normal text-xl ml-5">არა</label>
     </div>
     <div>
       <input
@@ -33,9 +33,9 @@
         name="covid"
         value="have_right_now"
         id="now"
-        class="w-[25px] h-[25px] align-middle"
+        class="w-6 h-6 align-middle"
       />
-      <label for="now" class="font-normal text-xl ml-[20px]">ახლა მაქვს</label>
+      <label for="now" class="font-normal text-xl ml-5">ახლა მაქვს</label>
     </div>
   </div>
 </template>

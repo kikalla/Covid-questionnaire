@@ -1,6 +1,6 @@
 <template>
-  <p class="font-bold text-[22px] mb-[20px] mt-[50px]">რას ელოდები?</p>
-  <div class="flex flex-col ml-[30px]">
+  <p class="font-bold text-2xl mb-5 mt-12">რას ელოდები?</p>
+  <div class="flex flex-col ml-8">
     <div>
       <input
         required
@@ -9,13 +9,13 @@
         name="vaccinationStage"
         value="registered_and_waiting"
         id="waiting"
-        class="w-[25px] h-[25px] align-middle border"
+        class="w-6 h-6 align-middle border"
       />
-      <label for="waiting" class="font-normal text-xl ml-[20px]"
+      <label for="waiting" class="font-normal text-xl ml-5"
         >დარეგისტრირებული ვარ და ველოდები რიცხვს</label
       >
     </div>
-    <div class="my-[20px]">
+    <div class="my-5">
       <input
         required
         v-model="vaccinateStage"
@@ -23,9 +23,9 @@
         name="vaccinationStage"
         value="not_planning"
         id="notPlanning"
-        class="w-[25px] h-[25px] align-middle"
+        class="w-6 h-6 align-middle"
       />
-      <label for="notPlanning" class="font-normal text-xl ml-[20px]"
+      <label for="notPlanning" class="font-normal text-xl ml-5"
         >არ ვგეგმავ</label
       >
     </div>
@@ -37,18 +37,18 @@
         name="vaccinationStage"
         value="had_covid_and_planning_to_be_vaccinated"
         id="planning"
-        class="w-[25px] h-[25px] align-middle"
+        class="w-6 h-6 align-middle"
       />
-      <label for="planning" class="font-normal text-xl ml-[20px]"
+      <label for="planning" class="font-normal text-xl ml-5"
         >გადატანილი მაქვს და ვგეგმავ აცრას</label
       >
     </div>
-    <div class="w-[500px] mt-[50px] ml-[25px] font-normal text-xl">
+    <div class="w-[31.25rem] mt-12 ml-6 font-normal text-xl">
       <p v-if="vaccinateStage === 'planning_vaccination'">
         ახალი პროტოკოლით კოვიდის გადატანიდან 1 თვის შემდეგ შეგიძლიათ ვაქცინის
         გაკეთება.
       </p>
-      <div class="mt-[20px]">
+      <div class="mt-5">
         <p v-if="vaccinateStage === 'planning_vaccination'">
           რეგისტრაციის ბმული
         </p>

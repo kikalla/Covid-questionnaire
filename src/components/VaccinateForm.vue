@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="saveVaccineValues">
-    <p class="font-bold text-[22px] mb-[20px]">უკვე აცრილი ხარ?</p>
-    <div class="ml-[30px]">
+    <p class="font-bold text-2xl mb-5">უკვე აცრილი ხარ?</p>
+    <div class="ml-7">
       <input
         required
         v-model="vaccinate"
@@ -9,11 +9,11 @@
         name="vaccine"
         :value="true"
         id="yes"
-        class="w-[25px] h-[25px] align-middle border"
+        class="w-6 h-6 align-middle border"
       />
-      <label for="yes" class="font-normal text-xl ml-[20px]">კი</label>
+      <label for="yes" class="font-normal text-xl ml-5">კი</label>
     </div>
-    <div class="my-[20px] ml-[30px]">
+    <div class="my-5 ml-7">
       <input
         required
         v-model="vaccinate"
@@ -21,9 +21,9 @@
         name="vaccine"
         :value="false"
         id="no"
-        class="w-[25px] h-[25px] align-middle border"
+        class="w-6 h-6 align-middle border"
       />
-      <label for="no" class="font-normal text-xl ml-[20px]">არა</label>
+      <label for="no" class="font-normal text-xl ml-5">არა</label>
     </div>
     <already-vaccinated
       v-if="vaccinate"
@@ -35,25 +35,26 @@
     ></not-vaccinated>
     <div
       @click="goBack"
-      class="absolute top-[955px] left-[890px] z-10 cursor-pointer"
+      class="absolute top-[59.75rem] left-[55.625rem] z-10 cursor-pointer"
     >
-      <img src="/src/assets/backArrow.svg" alt="" />
+      <img src="@/assets/backArrow.svg" alt="" />
     </div>
     <button
       type="submit"
-      class="absolute top-[955px] left-[1018px] z-10 cursor-pointer"
+      class="absolute top-[59.75rem] left-[63.75rem] z-10 cursor-pointer"
     >
-      <img src="/src/assets/arrow.svg" alt="" />
+      <img src="@/assets/arrow.svg" alt="" />
     </button>
   </form>
 </template>
 
 <script setup>
-import AlreadyVaccinated from "./vaccinateFormComponents/AlreadyVaccinated.vue";
-import NotVaccinated from "./vaccinateFormComponents/NotVaccinated.vue";
+import AlreadyVaccinated from "@/components/vaccinateFormComponents/AlreadyVaccinated.vue";
+
+import NotVaccinated from "@/components/vaccinateFormComponents/NotVaccinated.vue";
 
 import { ref } from "vue";
-import router from "../router";
+import router from "@/router";
 import { useStore } from "vuex";
 
 const store = useStore();
