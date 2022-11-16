@@ -29,6 +29,7 @@ import AntibodyTest from "@/components/conditionFormComponents/AntibodyTest.vue"
 import { ref } from "vue";
 import router from "@/router";
 import { useStore } from "vuex";
+import moment from "moment";
 
 const store = useStore();
 
@@ -77,7 +78,9 @@ function saveCovidCondition() {
     date: antibodyTestDate,
     number: antibodyTestNumber,
   });
-  store.commit("saveCovidDate", { value: covidDate });
+  store.commit("saveCovidDate", {
+    value: moment(covidDate.value).format("DD/MM/YYYY"),
+  });
   router.push({ path: "/vaccinate" });
 }
 </script>

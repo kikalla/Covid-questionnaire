@@ -227,7 +227,10 @@ function sendApi() {
     data["antibodies.number"] = store.state.antibodies.number;
   }
 
-  if (store.state.covidSicknessDate !== "") {
+  if (
+    (store.state.covidSicknessDate !== "") &
+    (store.state.covidSicknessDate !== "Invalid date")
+  ) {
     data["covid_sickness_date"] = store.state.covidSicknessDate;
   }
   if (store.state.hadVaccine !== null) {
@@ -249,6 +252,9 @@ function sendApi() {
   if (store.state.tellUsYourOpinionAboutUs !== "") {
     data["tell_us_your_opinion_about_us"] =
       store.state.tellUsYourOpinionAboutUs;
+  }
+  if (store.state.iAmWaiting !== "") {
+    data["i_am_waiting"] = store.state.iAmWaiting;
   }
 
   axios

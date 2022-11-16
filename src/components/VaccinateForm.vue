@@ -31,7 +31,7 @@
     ></already-vaccinated>
     <not-vaccinated
       v-if="vaccinate === false"
-      @sendVaccinateStage="saveVaccinateStage"
+      @sendIAmWaiting="saveWaiting"
     ></not-vaccinated>
     <div
       @click="goBack"
@@ -61,9 +61,14 @@ const store = useStore();
 
 const vaccinate = ref(null);
 const vaccinateStage = ref("");
+const iAmWaiting = ref("");
 
 function saveVaccinateStage(recivedVaccinateStage) {
   vaccinateStage.value = recivedVaccinateStage.value;
+}
+
+function saveWaiting(recivedWaiting) {
+  iAmWaiting.value = recivedWaiting.value;
 }
 
 function goBack() {
@@ -73,6 +78,8 @@ function goBack() {
 function saveVaccineValues() {
   store.commit("saveVaccine", { value: vaccinate });
   store.commit("saveVaccinationStage", { value: vaccinateStage });
+  store.commit("saveWaiting", { value: iAmWaiting });
+
   router.push({ path: "/covid-policy" });
 }
 </script>

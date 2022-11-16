@@ -1,7 +1,7 @@
 <template>
   <Form @submit="savePersonalInformation">
     <div class="flex flex-col">
-      <label for="name" class="font-bold mb-4 text-2xl">სახელი</label>
+      <label for="name" class="font-bold mb-4 text-2xl">სახელი*</label>
       <Field
         v-model="name"
         name="name"
@@ -10,10 +10,12 @@
         placeholder="სახელი"
         rules="required|min:3|alpha"
       />
-      <ErrorMessage name="name" class="text-red-600 mt-3 ml-3" />
+      <div>
+        <ErrorMessage name="name" class="text-red-600 mt-3 ml-3 absolute" />
+      </div>
     </div>
     <div class="flex flex-col">
-      <label for="lastname" class="font-bold mb-4 mt-11 text-2xl">გვარი</label>
+      <label for="lastname" class="font-bold mb-4 mt-14 text-2xl">გვარი*</label>
       <Field
         v-model="lastname"
         name="lastname"
@@ -22,10 +24,12 @@
         placeholder="გვარი"
         rules="required|min:3|alpha"
       />
-      <ErrorMessage name="lastname" class="text-red-600 mt-3 ml-3" />
+      <div>
+        <ErrorMessage name="lastname" class="text-red-600 mt-3 ml-3 absolute" />
+      </div>
     </div>
     <div class="flex flex-col">
-      <label for="email" class="font-bold mb-4 text-2xl mt-11">მეილი</label>
+      <label for="email" class="font-bold mb-4 text-2xl mt-14">მეილი*</label>
       <Field
         v-model="email"
         name="email"
@@ -34,7 +38,9 @@
         placeholder="მეილი"
         rules="required|redberry|email"
       />
-      <ErrorMessage name="email" class="text-red-600 mt-3 ml-3" />
+      <div>
+        <ErrorMessage name="email" class="text-red-600 mt-3 ml-3 absolute" />
+      </div>
     </div>
     <button type="submit" class="absolute top-[59.75rem] left-[63.6rem]">
       <img src="@/assets/arrow.svg" alt="" />

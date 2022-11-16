@@ -4,7 +4,7 @@
     <div>
       <input
         required
-        v-model="vaccinateStage"
+        v-model="iAmWaiting"
         type="radio"
         name="vaccinationStage"
         value="registered_and_waiting"
@@ -18,7 +18,7 @@
     <div class="my-5">
       <input
         required
-        v-model="vaccinateStage"
+        v-model="iAmWaiting"
         type="radio"
         name="vaccinationStage"
         value="not_planning"
@@ -32,7 +32,7 @@
     <div>
       <input
         required
-        v-model="vaccinateStage"
+        v-model="iAmWaiting"
         type="radio"
         name="vaccinationStage"
         value="had_covid_and_planning_to_be_vaccinated"
@@ -44,18 +44,14 @@
       >
     </div>
     <div class="w-[31.25rem] mt-12 ml-6 font-normal text-xl">
-      <p v-if="vaccinateStage === 'planning_vaccination'">
+      <p v-if="iAmWaiting === 'planning_vaccination'">
         ახალი პროტოკოლით კოვიდის გადატანიდან 1 თვის შემდეგ შეგიძლიათ ვაქცინის
         გაკეთება.
       </p>
       <div class="mt-5">
-        <p v-if="vaccinateStage === 'planning_vaccination'">
-          რეგისტრაციის ბმული
-        </p>
+        <p v-if="iAmWaiting === 'planning_vaccination'">რეგისტრაციის ბმული</p>
         <a
-          v-if="
-            vaccinateStage && !vaccinateStage.includes('registered_and_waiting')
-          "
+          v-if="iAmWaiting && !iAmWaiting.includes('registered_and_waiting')"
           class="text-[#1289AE]"
           href="https://booking.moh.gov.ge/"
           >👉 https://booking.moh.gov.ge/
@@ -68,10 +64,10 @@
 <script setup>
 import { ref, watch } from "vue";
 
-const emit = defineEmits(["sendVaccinateStage"]);
-const vaccinateStage = ref("");
+const emit = defineEmits(["sendIAmWaiting"]);
+const iAmWaiting = ref("");
 
-watch(vaccinateStage, function sendVaccinateStage() {
-  emit("sendVaccinateStage", vaccinateStage);
+watch(iAmWaiting, function sendIAmWaiting() {
+  emit("sendIAmWaiting", iAmWaiting);
 });
 </script>
