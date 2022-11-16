@@ -15,6 +15,7 @@ const store = createStore({
       covidSicknessDate: "",
       hadVaccine: null,
       vaccinationStage: "",
+      iAmWaiting: "",
       nonFormalMeetings: "",
       numberOfDaysFromOffice: null,
       whatAboutMeetingsInLive: "",
@@ -61,6 +62,9 @@ const store = createStore({
     },
     saveOpinion(state, payload) {
       state.tellUsYourOpinionAboutUs = payload.value;
+    },
+    saveWaiting(state, payload) {
+      state.iAmWaiting = payload.value;
     },
   },
 });
